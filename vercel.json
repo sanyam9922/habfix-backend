@@ -4,8 +4,11 @@
         {
             "src": "dist/index.js",
             "use": "@vercel/node",
-            "config": { "includeFiles": ["dist/**"] },
-            "command": "npm run build"
+            "config": {
+                "includeFiles": [
+                    "dist/**"
+                ]
+            }
         }
     ],
     "routes": [
@@ -13,5 +16,10 @@
             "src": "/(.*)",
             "dest": "dist/index.js"
         }
-    ]
+    ],
+    "functions": {
+        "preBuild": {
+            "command": "npm run build"
+        }
+    }
 }
