@@ -27,7 +27,8 @@ const port = process.env.PORT;
 app.use(express_1.default.json());
 app.use((0, cookie_parser_1.default)());
 app.use((0, cors_1.default)({
-    origin: 'https://65f69753cac9134c5d52f6dc--delicate-duckanoo-dc7e2d.netlify.app/'
+    origin: "https://65f69753cac9134c5d52f6dc--delicate-duckanoo-dc7e2d.netlify.app",
+    methods: ["GET", "POST", "PUT", "DELETE"]
 }));
 app.use('/api', routes_1.default);
 exports.instance = new razorpay_1.default({
