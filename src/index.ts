@@ -14,7 +14,7 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: 'http://localhost:5173'
+    origin: 'https://65f69753cac9134c5d52f6dc--delicate-duckanoo-dc7e2d.netlify.app/'
 }));
 
 app.use('/api',RootRouter);
