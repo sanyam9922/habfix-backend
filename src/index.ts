@@ -13,7 +13,7 @@ const port = process.env.PORT;
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-    origin: "https://65f69753cac9134c5d52f6dc--delicate-duckanoo-dc7e2d.netlify.app",
+    origin: "https://65f7d445846e7c14f3a422a4--delicate-duckanoo-dc7e2d.netlify.app/",
     methods: ["GET", "POST", "PUT", "DELETE"]
 }));
 
