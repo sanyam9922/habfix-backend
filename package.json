@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "npx prisma generate && nodemon ./src/index.ts",
-    "start": "node ./dist/index.js",
+    "start": "node dist/index.js",
     "build": "npm install && npx prisma generate && npx tsc" 
   },
   "keywords": [],
